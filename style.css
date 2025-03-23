@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+.main {
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  height: 644px;
+  left: 50px;
+  position: relative;
+}
+span img{
+  left: 50px;
+}
+
+nav {
+  max-width: 60vw;
+  justify-content: space-between;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100px;
+
+}
+  nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+    background: transparent;
+     left: -330px; 
+}
+
+.bttn button {
+  position: relative;
+  z-index: 20;
+  left: 230px;
+}
+.btnblc{
+  padding: 3px 19px;
+  background-color: grey;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn{
+  padding: 3px 19px;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 700px;
+  width: 95vw;
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border: 2px solid white;
+
+}
+
+
+.slider img {
+  height: 100%;
+  width: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  animation:moveImage 50s linear infinite ;
+  transition: all;
+}
+
+@keyframes moveImage {
+  from {
+    right: 600px; /* Start from the right */
+  }
+  to {
+   right: 10px; /* Move to the left */
+  }
+}
